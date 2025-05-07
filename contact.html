@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Watch Collection | TimeCrafters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Time<span>Crafters</span></a>
+            
+            <button class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="shop.html" class="nav-link ">Shop</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="overlay" id="overlay"></div>
+        </div>
+    </header>
+
+        <!-- Contact Header -->
+        <section class="contact-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you</p>
+            </div>
+        </section>
+    
+        <!-- Contact Content -->
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>Whether you have questions about our watches, need service for your timepiece, or just want to say hello, our team is here to help.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Visit Us</h4>
+                                    <p>123 Watch Street<br>New York, NY 10001</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4>Call Us</h4>
+                                    <p>(555) 123-4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p>info@timecrafters.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="business-hours">
+                            <h4>Business Hours</h4>
+                            <table class="hours-table">
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>10:00 AM - 6:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>10:00 AM - 4:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="sales">Watch Purchase Inquiry</option>
+                                    <option value="service">Watch Service Inquiry</option>
+                                    <option value="appraisal">Watch Appraisal</option>
+                                    <option value="other">Other Question</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256018042!2d-73.98784492423938!3d40.74844097138958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689879326049!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer watch authentication services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer professional authentication services for all major luxury watch brands. Our experts can verify the authenticity of your timepiece and provide a certificate of authenticity for a fee of $150. This service includes a full inspection of the watch's movement, case, and documentation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How often should I service my mechanical watch?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most mechanical watches should be serviced every 3-5 years to ensure optimal performance and longevity. However, this can vary based on the watch's age, brand, and how frequently it's worn. Watches worn daily or in challenging environments may require more frequent servicing.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is your return policy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 14-day return policy on all unworn watches with original packaging and tags intact. Custom or engraved watches are final sale. All returns are subject to a 10% restocking fee unless the watch is defective. Please contact us within 3 days of receipt to initiate a return.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you buy pre-owned watches?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we purchase select pre-owned luxury watches in excellent condition. Please email us clear photos of your watch (front, back, sides, movement if visible), along with any documentation and service history you may have. We'll provide a preliminary offer within 48 hours. For the most accurate valuation, we recommend bringing your watch to our showroom for inspection.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does a typical watch repair take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard repairs (battery replacement, strap adjustments) are completed within 24-48 hours. Complex mechanical repairs may take 2-4 weeks, depending on parts availability. We’ll provide a time estimate after diagnosis and keep you updated throughout the process.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <script>
+            // FAQ Toggle Functionality
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', () => {
+                    const faqItem = question.parentElement;
+                    faqItem.classList.toggle('active');
+                });
+            });
+    
+            // Form Submission
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you! Your message has been sent. We’ll respond within 24 hours.');
+                this.reset();
+            });
+        </script>
+         <script>
+            // Mobile Menu Toggle
+            const menuBtn = document.getElementById('menu-btn');
+            const navMenu = document.getElementById('nav-menu');
+            const overlay = document.getElementById('overlay');
+    
+            menuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                overlay.classList.toggle('active');
+                
+                // Change icon from bars to X when menu is open
+                if (navMenu.classList.contains('active')) {
+                    menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+                } else {
+                    menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+    
+            // Close menu when clicking on overlay
+            overlay.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+    
+            // Close menu when clicking on a nav link (optional)
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    overlay.classList.remove('active');
+                    menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+        </script>
+    </body>
+    </html>

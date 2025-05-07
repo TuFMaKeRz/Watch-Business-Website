@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Watch Collection | TimeCrafters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Time<span>Crafters</span></a>
+            
+            <button class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="shop.html" class="nav-link active">Shop</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="overlay" id="overlay"></div>
+        </div>
+    </header>
+
+    <!-- Shop Hero -->
+    <section class="shop-hero">
+        <div class="container shop-hero-content">
+            <h1>Luxury Watch Collection</h1>
+            <p>Discover timeless pieces crafted with precision and elegance</p>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <main class="container shop-container">
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+            <div class="filter-header">
+                <h3>Filters</h3>
+                <span class="reset-filters" id="resetFilters">Reset All</span>
+            </div>
+            
+            <div class="filter-group">
+                <h4>Categories <span id="categoryCount"></span></h4>
+                <ul class="filter-options" id="categoryFilters"></ul>
+            </div>
+            
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <div class="price-range-container">
+                    <input type="range" min="0" max="10000" step="100" value="10000" class="price-range" id="priceRange">
+                    <div class="price-values">
+                        <span>$<span id="minPrice">0</span></span>
+                        <span>$<span id="maxPrice">10000</span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <h4>Brand <span id="brandCount"></span></h4>
+                <ul class="filter-options" id="brandFilters"></ul>
+            </div>
+            
+            <div class="filter-group">
+                <h4>Movement</h4>
+                <ul class="filter-options" id="movementFilters"></ul>
+            </div>
+            
+            <div class="filter-group">
+                <h4>Features</h4>
+                <ul class="filter-options" id="featureFilters"></ul>
+            </div>
+        </aside>
+        
+        <!-- Products Section -->
+        <section class="products-section">
+            <div class="products-header">
+                <h2 id="productsHeading">All Watches</h2>
+                <div class="sort-options">
+                    <label for="sort" class="sort-label">Sort by:</label>
+                    <select id="sort" class="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="productsGrid"></div>
+            
+            <div class="pagination" id="pagination"></div>
+        </section>
+    </main>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TimeCrafters</h3>
+                    <p>Your trusted partner for luxury watch sales and expert repair services since 2005.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="index.html">Home</a></li>
+                        <li class="footer-link"><a href="shop.html">Shop</a></li>
+                        <li class="footer-link"><a href="services.html">Services</a></li>
+                        <li class="footer-link"><a href="about.html">About Us</a></li>
+                        <li class="footer-link"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">Shipping Policy</a></li>
+                        <li class="footer-link"><a href="#">Return Policy</a></li>
+                        <li class="footer-link"><a href="#">Warranty Information</a></li>
+                        <li class="footer-link"><a href="#">FAQ</a></li>
+                        <li class="footer-link"><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new arrivals and special offers.</p>
+                    <form class="newsletter">
+                        <input type="email" placeholder="Your Email Address" class="form-control">
+                        <button type="submit" class="btn btn-block">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 TimeCrafters. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/shop.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        const overlay = document.getElementById('overlay');
+
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            // Change icon from bars to X when menu is open
+            if (navMenu.classList.contains('active')) {
+                menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        // Close menu when clicking on overlay
+        overlay.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+
+        // Close menu when clicking on a nav link (optional)
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+    </script>
+</body>
+</html>
